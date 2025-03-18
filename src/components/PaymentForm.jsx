@@ -4,7 +4,7 @@ const PaymentForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false); // Alert State
 
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-6 rounded-lg shadow-xl w-full max-w-4xl border border-gray-600">
+    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-6 rounded-lg shadow-xl w-full max-w-7xl border border-gray-600">
       {isSubmitted && (
         <div className="bg-green-600 text-white p-3 rounded mb-4 font-semibold">
           ✅ Form submitted successfully!
@@ -76,23 +76,25 @@ const PaymentForm = () => {
           ></textarea>
         </div>
 
-        <div className="bg-gray-600 p-4 rounded-lg border border-gray-500 text-left">
-          <h3 className="font-bold text-gray-200">
-            PAYMENT MODE: NEFT / CHEQUE / BANK TRANSFER / UPI ACCEPTED
-          </h3>
-          <p className="text-sm text-gray-400">Bank Name: Bank Of Baroda</p>
-          <p className="text-sm text-gray-400">Account No: 02730200001609</p>
-          <p className="text-sm text-gray-400">IFSC: BARBOMADHIX</p>
-        </div>
-
         <div className="text-center">
           <label className="block text-gray-400 text-sm text-center font-semibold">
             Scan QR Code for Payment
           </label>
           <img
             src="/images/scanner3.jpg"
-            alt="Scanner"
+            alt="Scanner Image"
             className="w-2/3 sm:w-1/3 max-w-xs min-w-[150px] border border-gray-500 rounded shadow-md mx-auto"
+          />
+        </div>
+
+        <div className="text-center">
+          <label className="block text-gray-400 text-sm text-center font-semibold">
+            Scan Cheque Image for Reference
+          </label>
+          <img
+            src="/cheque.jpeg"
+            alt="Cheque Image"
+            className="w-full max-w-2xl min-w-[300px] border border-gray-500 rounded shadow-md mx-auto"
           />
         </div>
 
