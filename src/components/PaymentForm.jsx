@@ -17,7 +17,7 @@ const PaymentForm = () => {
 
       <form
         className="space-y-6"
-        action="https://formsubmit.co/webteam.brightensolutions@gmail.com"
+        action="https://formsubmit.co/sales@chaudharienterprise.com"
         method="POST"
         encType="multipart/form-data"
         onSubmit={() => setIsSubmitted(true)} // Show alert on submit
