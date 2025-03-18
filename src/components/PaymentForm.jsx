@@ -4,26 +4,26 @@ const PaymentForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false); // Alert State
 
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-6 rounded-lg shadow-xl w-full max-w-7xl border border-gray-600">
+    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-4 sm:p-6 rounded-lg shadow-xl w-full max-w-7xl border border-gray-600">
       {isSubmitted && (
         <div className="bg-green-600 text-white p-3 rounded mb-4 font-semibold">
           ✅ Form submitted successfully!
         </div>
       )}
 
-      <h2 className="text-3xl font-bold mb-4 text-center text-gray-100">
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-gray-100">
         Verification & Payment Form
       </h2>
 
       <form
-        className="space-y-6"
+        className="space-y-4 sm:space-y-6"
         action="https://formsubmit.co/sales@chaudharienterprise.com"
         method="POST"
         encType="multipart/form-data"
-        onSubmit={() => setIsSubmitted(true)} // Show alert on submit
+        onSubmit={() => setIsSubmitted(true)}
       >
-        <div className="flex space-x-4">
-          <div className="w-1/2">
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <div className="w-full sm:w-1/2">
             <label className="block text-gray-400 text-sm text-left font-semibold">
               Name
             </label>
@@ -36,7 +36,7 @@ const PaymentForm = () => {
             />
           </div>
 
-          <div className="w-1/2">
+          <div className="w-full sm:w-1/2">
             <label className="block text-gray-400 text-sm text-left font-semibold">
               Surname
             </label>
@@ -83,7 +83,7 @@ const PaymentForm = () => {
           <img
             src="/images/scanner3.jpg"
             alt="Scanner Image"
-            className="w-2/3 sm:w-1/3 max-w-xs min-w-[150px] border border-gray-500 rounded shadow-md mx-auto"
+            className="w-full sm:w-1/3 max-w-xs min-w-[150px] border border-gray-500 rounded shadow-md mx-auto"
           />
         </div>
 
