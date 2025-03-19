@@ -95,9 +95,12 @@ const PaymentForm = () => {
             <p className="text-sm text-gray-400 mb-2">
               NEFT / CHEQUE / BANK TRANSFER / UPI ACCEPTED
             </p>
-            <p className="text-sm text-blue-400">Bank Name: Bank Of Baroda</p>
-            <p className="text-sm text-blue-400">Account No: 02730200001609</p>
-            <p className="text-sm text-blue-400">IFSC: BARBOMADHIX</p>
+            <p className="text-sm text-blue-400">
+              Bank Name: The Surat District Co-operative Bank Ltd.
+            </p>
+            <p className="text-sm text-blue-400">Account No: 401001433372</p>
+            <p className="text-sm text-blue-400">IFSC: SDCB0000004</p>
+            <p className="text-sm text-blue-400">Upi Number: 9974870436</p>
           </div>
 
           <div>
