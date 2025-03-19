@@ -4,7 +4,7 @@ const PaymentForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false); // Alert State
 
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-4 sm:p-6 rounded-lg shadow-xl w-full max-w-7xl border border-gray-600 overflow-hidden">
+    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-4 sm:p-6 rounded-lg shadow-xl w-[95%] max-w-none mx-auto w-full border border-gray-600 ">
       {isSubmitted && (
         <div className="bg-green-600 text-white p-3 rounded mb-4 font-semibold">
           ✅ Form submitted successfully!
@@ -76,7 +76,7 @@ const PaymentForm = () => {
           ></textarea>
         </div>
 
-        <div className="text-center">
+        {/* <div className="text-center">
           <label className="block text-gray-400 text-sm text-center font-semibold">
             Scan QR Code for Payment
           </label>
@@ -85,17 +85,18 @@ const PaymentForm = () => {
             alt="Scanner Image"
             className="w-full sm:w-1/3 max-w-xs min-w-[150px] border border-gray-500 rounded shadow-md mx-auto"
           />
-        </div>
+        </div> */}
 
-        <div className="text-center">
-          <label className="block text-gray-400 text-sm text-center font-semibold">
-            Scan Cheque Image for Reference
-          </label>
-          <img
-            src="/cheque.jpeg"
-            alt="Cheque Image"
-            className="w-full max-w-2xl min-w-[300px] border border-gray-500 rounded shadow-md mx-auto"
-          />
+        <div className="text-center bg-gray-700 p-4 rounded-lg border border-gray-500">
+          <h3 className="font-bold text-gray-300 text-lg mb-2">PAYMENT MODE</h3>
+          <p className="text-sm text-gray-400 mb-2">
+            NEFT / CHEQUE / BANK TRANSFER / UPI ACCEPTED
+          </p>
+          <p className="text-sm text-blue-400">
+            Bank Name: The Surat District Co-operative Bank Ltd.
+          </p>
+          <p className="text-sm text-blue-400">Account No: 401001433372</p>
+          <p className="text-sm text-blue-400">IFSC: SDCB0000004</p>
         </div>
 
         <div>
