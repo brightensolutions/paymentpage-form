@@ -66,6 +66,19 @@ const PaymentForm = () => {
 
           <div>
             <label className="block text-gray-400 text-sm text-left font-semibold">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              className="w-full p-2 border border-gray-500 bg-gray-700 rounded focus:ring-2 focus:ring-gray-500"
+              placeholder="Enter Email Address"
+              required
+            />
+          </div>
+
+          <div>
+            <label className="block text-gray-400 text-sm text-left font-semibold">
               Requirement Details
             </label>
             <textarea
