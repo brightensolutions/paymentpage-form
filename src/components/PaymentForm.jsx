@@ -77,7 +77,7 @@ const PaymentForm = () => {
             ></textarea>
           </div>
 
-          <div className="text-center bg-gray-700 p-4 rounded-lg border border-gray-500">
+          <div className="text-left bg-gray-700 p-4 rounded-lg border border-gray-500">
             <h3 className="font-bold text-gray-300 text-lg mb-2">
               PAYMENT MODE
             </h3>
