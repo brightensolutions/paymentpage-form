@@ -77,17 +77,6 @@ const PaymentForm = () => {
             ></textarea>
           </div>
 
-          <div className="text-center">
-            <label className="block text-gray-400 text-sm text-center font-semibold">
-              Scan QR Code for Payment
-            </label>
-            <img
-              src="scanner.jpeg"
-              alt="Scanner Image"
-              className="w-2/3 sm:w-1/2 max-w-[400px] sm:max-w-[450px] border border-gray-500 rounded shadow-md mx-auto"
-            />
-          </div>
-
           <div className="text-center bg-gray-700 p-4 rounded-lg border border-gray-500">
             <h3 className="font-bold text-gray-300 text-lg mb-2">
               PAYMENT MODE
@@ -101,6 +90,17 @@ const PaymentForm = () => {
             <p className="text-sm text-blue-400">Account No: 401001433372</p>
             <p className="text-sm text-blue-400">IFSC: SDCB0000004</p>
             <p className="text-sm text-blue-400">Upi Number: 9974870436</p>
+          </div>
+
+          <div className="text-center">
+            <label className="block text-gray-400 text-sm text-center font-semibold">
+              Scan QR Code for Payment
+            </label>
+            <img
+              src="scanner.jpeg"
+              alt="Scanner Image"
+              className="w-2/3 sm:w-1/2 max-w-[400px] sm:max-w-[450px] border border-gray-500 rounded shadow-md mx-auto"
+            />
           </div>
 
           <div>
