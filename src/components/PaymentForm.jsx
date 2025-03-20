@@ -4,7 +4,7 @@ const PaymentForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false); // Alert State
 
   return (
-    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 p-4 sm:p-6 rounded-lg shadow-xl min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-300 sm:p-6 rounded-lg shadow-xl min-h-screen flex items-center justify-center">
       <div className="w-[90%] max-w-4xl mx-auto">
         {isSubmitted && (
           <div className="bg-green-600 text-white p-3 rounded mb-4 font-semibold">
