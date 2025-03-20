@@ -157,6 +157,13 @@ const PaymentForm = () => {
             Submit
           </button>
         </form>
+        <div className="mt-6 text-center text-white-700 font-bold">
+          For any inquiries, contact us:
+          <br />
+          Mail: sales@chaudharienterprise.com
+          <br />
+          Phone: 9974879436
+        </div>
       </div>
     </div>
   );
